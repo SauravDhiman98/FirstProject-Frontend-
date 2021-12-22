@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Mix veg Paneer</title>
+       <link rel="icon" href="fevicon.png">
+       <link rel="icon" href="fevicon.png">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire-animation|neon">
+       <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Luxurious+Script&family=Satisfy&family=Shalimar&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Love+Light&family=Luxurious+Script&family=Satisfy&family=Shalimar&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Love+Light&family=Luxurious+Script&family=Satisfy&family=Shalimar&display=swap" rel="stylesheet">
+
+       <style>
+           * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box
+            }
+            :root {
+      /* colors */
+      --primary-50: #e0fcff;
+      --primary-100: #bef8fd;
+      --primary-200: #87eaf2;
+      --primary-300: #54d1db;
+      --primary-400: #38bec9;
+      --primary-500: #2cb1bc;
+      --primary-600: #14919b;
+      --primary-700: #0e7c86;
+      --primary-800: #0a6c74;
+      --primary-900: #044e54;
+    
+      /* grey */
+      --grey-50: #f0f4f8;
+      --grey-100: #d9e2ec;
+      --grey-200: #bcccdc;
+      --grey-300: #9fb3c8;
+      --grey-400: #829ab1;
+      --grey-500: #627d98;
+      --grey-600: #486581;
+      --grey-700: #334e68;
+      --grey-800: #243b53;
+      --grey-900: #102a43;
+      /* rest of the colors */
+      --black: #222;
+      --white: #fff;
+      --red-light: #f8d7da;
+      --red-dark: #842029;
+      --green-light: #d1e7dd;
+      --green-dark: #0f5132;
+    
+      /* fonts  */
+      --headingFont: 'Roboto Condensed', Sans-Serif;
+      --bodyFont: 'Cabin', Sans-Serif;
+      --small-text: 0.875rem;
+      --extra-small-text: 0.7em;
+      /* rest of the vars */
+      --backgroundColor: var(--grey-50);
+      --textColor: var(--grey-900);
+      --borderRadius: 0.25rem;
+      --letterSpacing: 1px;
+      --transition: 0.3s ease-in-out all;
+      --max-width: 1120px;
+      --fixed-width: 500px;
+      --fluid-width: 90vw;
+      --breakpoint-lg: 992px;
+      --nav-height: 6rem;
+      /* box shadow*/
+      --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    body{
+           background-image: var(--grey-100);
+            }
+            #divEle{
+                font-family: 'Black And White Picture', sans-serif;
+                margin-top: 0px;
+                margin-left: 100px;
+                /* color:azure; */
+                font-size: 60px;
+                color: #0e7c86;
+                
+       
+            }
+            #divEle2{
+                font-family: 'Black And White Picture', sans-serif;
+                color: #044e54;
+                font-size: 25px;
+                margin-left: 0%;
+                
+                
+                    }
+                    #menubar1{
+                font-family: 'Slabo 27px', serif;
+                font-size: 25px;
+                margin-left:150px;
+                color: #044e54;
+                margin-top: 10px;
+                align-self: center;
+               
+                font-weight: 1000;
+                
+            }
+            #Search{
+                margin-left: 150px; 
+                 background-color: transparent;
+                 width: 150px;
+                 height: 30px;
+                 border-radius: 10px;
+                 border:2px solid #0e7c86;
+                    }
+            #heading{
+                float: left;
+                box-sizing: border-box;
+                width: 50%;
+                background-color: var(--grey-100);
+                font-family: 'Love and Light', cursive;
+                height: 50px;
+                margin-left: 150px;
+                margin-top: 150px;
+                border: 1px solid var(--grey-100);
+                text-align: center;
+                padding: 10px;
+                box-shadow: 1px 1px 3px var(--grey-200);
+            } 
+            #heading1{
+                float: left;
+                background-color: var(--grey-100);
+                font-family: 'Love and Light', cursive;
+                box-sizing: border-box;
+                width: 50%;
+                height: 50px;
+                margin-left: 150px;
+                margin-top: 820px;
+                border: 1px solid var(--grey-100);
+                text-align: center;
+                padding: 10px;
+                box-shadow: 1px 1px 3px var(--grey-200);
+            }
+            #list{
+                /* float: left;
+                box-sizing: border-box;
+                width: 30%;
+                margin-left: 150px;
+                width: 600px;
+                height: 50px; */
+                text-align: left;
+                font-family: 'Love and Light', cursive;
+                font-size: 15px;
+                margin-top: 30px;
+            } 
+            #list1{
+                text-align: left;
+                font-family: 'Love and Light', cursive;
+                font-size: 15px;
+                margin-top: 30px; 
+            }   
+            .RightImage{
+                margin-top: 100px;
+                margin-right: 80px;
+               float: right;
+               box-sizing: border-box;
+               width: 33%;
+               box-shadow: 2px 2px 5px var(--grey-400);
+               border-radius: 50px;
+               
+               
+                 }                   
+       </style>
+    </head>
+    <body>
+        <nav style="background: whitesmoke;"> 
+            <div>
+                <label  id="divEle" for="">Food</label>
+                <label  id="divEle2" for="">Recepies</label>
+                 <label  id="menubar1" for="Recepies">Recepies</label>
+                 <a href="ContactPage.html"><label id="menubar1" for="about">Contact</label></a>
+                 <a href="" target="_parent"><label id="menubar1" for="contact">Log In</label></a>
+                 <label><input type="search" name="search" id="Search" placeholder="Search"><button  style="background-color:#38bec9; margin-left: 10px; width: 70px; height: 25px; border-radius: 10px; color: white">Search</button></label>
+             </div>
+         </nav>
+         <h2 id="heading">Ingredients of Lehsuni Paneer Masala
+         <ul id="list">
+             <li>250 gm chopped into cubes paneer</li><br>
+             <li>1 1/2 tablespoon corn flour</li><br>
+             <li>2 dry red chili</li><br>
+             <li>1 medium chopped capsicum (green pepper)</li><br>
+             <li>1 handful chopped spring onions</li><br>
+             <li>1/4 cup crushed peanuts</li><br>
+             <li>gm salt</li><br>
+             <li>water as required</li><br>
+             <li>1 1/2 tablespoon red chilli sauce</li><br>
+             <li>2 tablespoon vegetable oil</li><br>
+             <li>1 1/2 teaspoon chopped garlic</li><br>
+             <li>1 medium thinly sliced onion</li><br>
+             <li>1/2 tablespoon soy sauce</li><br>
+             <li>1 teaspoon red chilli powder</li><br>
+             <li>gm black pepper</li><br>
+         </ul>
+         </h2>
+         <br>
+         <h2 id="heading1">How to make Lehsuni Paneer
+        <ul id="list1">
+             <ul style="font-size:20px;">
+                Step 1 Chop the veggies
+             <li style="font-size: 15px;">Firstly, chop all the veggies like onion, carrot, capsicum, cauliflower, baby corn, beans into small pieces and set them aside. Also, chop the paneer into small cubes.</li>
+             </ul>
+             <ul  style="font-size: 20px; margin-top: 20px;">Step 2 The prepration
+             <li style="font-size: 15px;">Heat oil in a pan. Add asafoetida, cumin seeds and mustard seeds. Let them splutter for a minute. Now add chopped onion and saute them for a few minutes until they turn golden. Now add all the veggies like carrot, capsicum, cauliflower, baby corn, beans and peas.</li>
+             </ul>
+             <ul style="font-size: 20px;margin-top: 20px;">Step 3 Add the spices
+             <li style="font-size: 15px;">Add salt, red chilli powder, dry mango powder, coriander powder, turmeric and give a nice mix. Now add 1/4 cup water. This will prevent the veggies from becoming too dry and will produce steam which will quickly cook the veggies. Cover the pan with a lid for 6-8 minutes.</li>
+             </ul>
+            <ul  style="font-size: 20px;margin-top: 20px;">Step 4 Add paneer
+            <li style="font-size: 15px;">Now open the lid, add paneer cubes, garam masala and give a gentle mix. Cook for another 5 minutes and switch off the flame.</li>
+            </ul>
+        </ul>
+         </h2>
+        <div class="RightImage">
+            <img style="border-radius: 50px; align-self: baseline;" src="lehsuni-paneer-tikka-spicy-cottage-cheese-skewers-recipe-main-photo.jpg" width="500px" alt="">
+        </div>
+    </body>
+</html>

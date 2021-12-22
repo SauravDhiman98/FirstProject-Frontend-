@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Recepies</title>
+        <!-- Fevicon -->
+        <link rel="icon" href="fevicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire-animation|neon">
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Luxurious+Script&effct=shadow-multiple" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Luxurious+Script&family=Satisfy&display=swap" rel="stylesheet">
+        <!-- For Menu texts -->
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Love+Light&family=Luxurious+Script&family=Satisfy&family=Shalimar&display=swap" rel="stylesheet">
+        <!-- For center DIV elements -->
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Love+Light&family=Luxurious+Script&family=Satisfy&family=Shalimar&family=Slabo+27px&display=swap" rel="stylesheet">
+        <style>
+            * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box
+        }
+        :root {
+  /* colors */
+  --primary-50: #e0fcff;
+  --primary-100: #bef8fd;
+  --primary-200: #87eaf2;
+  --primary-300: #54d1db;
+  --primary-400: #38bec9;
+  --primary-500: #2cb1bc;
+  --primary-600: #14919b;
+  --primary-700: #0e7c86;
+  --primary-800: #0a6c74;
+  --primary-900: #044e54;
+
+  /* grey */
+  --grey-50: #f0f4f8;
+  --grey-100: #d9e2ec;
+  --grey-200: #bcccdc;
+  --grey-300: #9fb3c8;
+  --grey-400: #829ab1;
+  --grey-500: #627d98;
+  --grey-600: #486581;
+  --grey-700: #334e68;
+  --grey-800: #243b53;
+  --grey-900: #102a43;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts  */
+  --headingFont: 'Roboto Condensed', Sans-Serif;
+  --bodyFont: 'Cabin', Sans-Serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 500px;
+  --fluid-width: 90vw;
+  --breakpoint-lg: 992px;
+  --nav-height: 6rem;
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+            body{
+                /* background-image: url(2882747.jpg); */
+                background: var(--grey-50);
+                background-size: cover;
+                background-position: 0%;
+                background-attachment: fixed;
+                /* backdrop-filter: brightness(50%); */
+            }
+            nav{
+               
+                border-bottom: 1px solid black;
+                background-color: var(--grey-100);
+                
+            }
+            #divEle{
+                font-family: 'Black And White Picture', sans-serif;
+                margin-top: 0px;
+                margin-left: 100px;
+                /* color:azure; */
+                font-size: 60px;
+                color: #0e7c86;
+                
+       
+            }
+            #menubar{
+                font-family: 'Luxurious Script', cursive;
+                font-size:50px;
+                margin-left:150px;
+                /* color: wheat; */
+                margin-top: 0px;
+                align-self: center;
+                text-shadow:3px 3px 3px white;
+                font-weight: 1000;
+            }
+            #divEle2{
+                font-family: 'Black And White Picture', sans-serif;
+                color: #044e54;
+                font-size: 25px;
+                margin-left: 0%;
+                
+                
+                    }
+            #menubar1{
+                font-family: 'Slabo 27px', serif;
+                font-size: 25px;
+                margin-left:150px;
+                color: #044e54;
+                margin-top: 10px;
+                align-self: center;
+               
+                font-weight: 1000;
+                
+            }
+            #Heading{
+                font-family: 'satisfy', cursive;
+                margin-top: 100px;
+                margin-left: 50px;
+                font-size: 40px;
+                font-display: swap;
+                color: black;
+                text-align:center;
+                text-shadow: 5px 5px 5px black;
+                      }
+            #Heading1 {
+                font-family: 'Satisfy', cursive;
+                margin-left: 440px;
+                font-size: 20px;
+                font-weight: 1000;
+                color: black;
+            }  
+            #Heading2{
+                font-family: 'Satisfy', cursive;
+                margin-left: 180px;
+                font-size: 20px;
+                font-weight: 1000;
+                color: black;
+            }    
+            #Search{
+                 margin-left: 150px; 
+                 background-color: transparent;
+                 width: 150px;
+                 height: 30px;
+                 border-radius: 10px;
+                 border:2px solid #0e7c86;
+                    }   
+        #LeftScroll{
+            background:var(--grey-100);
+               float: left;
+               width: 300px;
+               height: 700px;
+               overflow: auto;
+               vertical-align: baseline;
+               text-align: center;
+               font-family: 'Slabo 27px', serif;
+               font-weight: 500;
+               margin-bottom: 10px;
+                   }
+                   /* images for collections */
+        #divPicture{
+                 box-sizing: border-box;
+                 width: 30%;
+                 width: 250px;
+                 height: 150px;
+                 /* position: relative; */
+                 margin-left: 360px;
+                 margin-top: 40px;
+               }  
+               #divPicture1{
+                 box-sizing: border-box;
+                 /* width: 30%; */
+                 width: 250px;
+                 height: 150px;
+                 position: relative;
+                 margin-left: 660px;
+                 margin-top: 40px;
+               }  
+               .flex-container{
+                   margin-top: 30px;
+                 display: flex;
+                    }
+                .flex-container > div{
+                          padding: 50px;
+                                     } 
+                .flex-container1{
+                   margin-top: 50px;
+                 display: flex;
+                    } 
+                .flex-container1 > div{
+                       padding: 50px;
+                }                                     
+               
+        </style>
+    </head>
+    <body>
+     <nav> 
+           <div>
+               <label  id="divEle" for="">Food</label>
+               <label  id="divEle2" for="">Recepies</label>
+                <a href="Recepies.html" target="_blank" style="text-decoration:none; text-shadow:0 0 3px var(--green-dark);"><label  id="menubar1" for="Recepies">Recepies</label></a>
+                <a target="_blank" href="ContactPage.html"style="text-decoration:none;  text-shadow:0 0 3px var(--green-dark);"><label id="menubar1" for="about">Contact</label></a>
+                <a href="" target="_blank" style="text-decoration:none; text-shadow:0 0 3px var(--green-dark);"><label id="menubar1" for="contact">Log In</label></a>
+                <label><input type="search" name="search" id="Search" placeholder="Search"><button  style="background-color:#38bec9; margin-left: 10px; width: 70px; height: 25px; border-radius: 10px; color: white">Search</button></label>
+            </div>
+        </nav>
+        <div id="LeftScroll">
+             <h3 style="padding-top: 10px;">Recepies</h3>
+             <!-- Paneer Recepies -->
+             <a href="/Paneer/PaneerChilli.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);" ><p style="margin-top: 20px;">Paneer Chilli Dry</p></a>
+             <a href="/Paneer/PaneerBreadPakoda.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Paneer Bread Pakora</p></a>
+             <a href="/Paneer/Mix_veg.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Mixed Vegetable</p></a>
+             <a href="/Paneer/PaneerBarfi.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Paneer Barfi</p></a>
+             <a href="/Paneer/Lahsuni_Paneer.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Cheese Stuffed Tikka</p></a>
+             <a href="/Paneer/KungPaoPaneer.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Kung Pao Paneer</p></a>
+             <a href="/Paneer/Aloo_Paneer.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Aloo Paneer Masala</p></a>
+             <a href="/Paneer/Broccoli.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Broccoli Paneer</p></a>
+             <!-- Potato Recepies -->
+             <a href="/Potatoes/MessedPotatoes.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Classic Mashed Potatoes</p></a>
+             <a href="/Potatoes/ChessyPotatoes.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Cheesy Broccoli Potatoes</p></a>
+             <a href="/Potatoes/RagiCuttlet.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Ragi Cutlet</p></a>
+             <a href="/Potatoes/raw_banana.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Banana Kofta Curry</p></a>
+             <a href="/Potatoes/GarlicSoup.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Garlic Soup</p></a>
+             <a href="/Potatoes/AlooCheela.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Potato Cheela</p></a>
+             <a href="/Potatoes/Farali.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Farali Paniyaram</p></a>
+             <a href="/Potatoes/AlooCutlet.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Beetroot Aloo Cutlet</p></a>
+             <!-- Rice Recepies -->
+             <a href="/Rice/Anjeer.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Anjeer Kheer</p></a>
+             <a href="/Rice/MasalaRice.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Masala Rice</p></a>
+             <a href="/Rice/VegFried.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Veg Fried Rice</p></a>
+             <a href="/Rice/Bibimbap.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Bibimbap</p></a>
+             <a href="/Rice/MiniMexican.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Mini Mexican Platter</p></a>
+             <a href="/Rice/Thengai.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Thengai Payasam</p></a>
+             <a href="/Rice/Kalkandu.html" style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px;">Kalkandu Sadam</p></a>
+             <a href="/Rice/BellamPara.html"style="text-decoration:none; color: #044e54; text-shadow:0 0 3px var(--green-dark);"><p style="margin-top: 20px; margin-bottom: 30px;">Bellam Paramannam</p></a>
+        </div>
+         <div>
+            <h3 style="margin-left: 350px; margin-top: 30px; font-family: 'Slabo 27px', serif; font-size: 30px; border: 3px solid #38bec9; text-align: center; box-sizing: border-box; width: 20%; border-radius: 30px; color: #044e54;">Collection  for  You</h3>
+         </div>
+         <div class="flex-container">
+             <img src="Christmas.jpg" height="150px" width="250px" style="margin-left: 50px; border-radius: 50px;" alt="">
+             <img src="Navratri.jpg" height="150px" width="250px"  style="margin-left: 50px; border-radius: 50px;" alt="">
+             <img src="ganesh.jpg" height="150px" width="250px"  style="margin-left: 50px; border-radius: 50px;" alt="">
+             <img src="teej.jpg" height="150px" width="250px"  style="margin-left: 50px; border-radius: 50px;" alt="">
+         </div>
+         <div class="flex-container">
+             <h3 style="margin-left: 140px;">Christmas</h3>
+             <h3 style="margin-left: 220px;">Navratri</h3>
+             <h3 style="margin-left: 200px;">Ganesh Chaturthi</h3>
+             <h3 style="margin-left: 200px;">Teej</h3>
+
+         </div>
+         <h3 style="margin-left: 350px; margin-top: 20px; font-family: 'Slabo 27px', serif; font-size: 30px; border: 3px solid #38bec9; text-align: center; box-sizing: border-box; width: 20%; border-radius: 30px; color: #044e54;">Recepies Videos</h3>
+         <div class="flex-container1">
+            <iframe style="margin-left: 50px; border-radius: 50px;" width="250px" height="150px" src="https://www.youtube.com/embed/G3laF4bomsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe style="margin-left: 50px; border-radius: 50px;" width="250px" height="150px" src="https://www.youtube.com/embed/2IqhldXpk-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe style="margin-left: 50px; border-radius: 50px;" width="250px" height="150px" src="https://www.youtube.com/embed/2q_XCn1AEoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe style="margin-left: 50px; border-radius: 50px;" width="250px" height="150px" src="https://www.youtube.com/embed/fVL_APWON84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+         <div class="flex-container" style="margin-bottom: 50px;">
+            <h3 style="margin-left: 130px;">Irani Chai</h3>
+            <h3 style="margin-left: 210px;">Namak Paare</h3>
+            <h3 style="margin-left: 180px;">Fruit Custrad</h3>
+            <h3 style="margin-left: 180px;">Gulkand ke Laddoo</h3>
+
+        </div>
+    </body>
+</html>

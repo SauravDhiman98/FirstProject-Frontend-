@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recepies</title>
+        <link rel="icon" href="fevicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire-animation|neon">
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Luxurious+Script&family=Satisfy&family=Shalimar&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Love+Light&family=Luxurious+Script&family=Satisfy&family=Shalimar&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Love+Light&family=Luxurious+Script&family=Satisfy&family=Shalimar&display=swap" rel="stylesheet">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box
+            }
+            :root {
+      /* colors */
+      --primary-50: #e0fcff;
+      --primary-100: #bef8fd;
+      --primary-200: #87eaf2;
+      --primary-300: #54d1db;
+      --primary-400: #38bec9;
+      --primary-500: #2cb1bc;
+      --primary-600: #14919b;
+      --primary-700: #0e7c86;
+      --primary-800: #0a6c74;
+      --primary-900: #044e54;
+    
+      /* grey */
+      --grey-50: #f0f4f8;
+      --grey-100: #d9e2ec;
+      --grey-200: #bcccdc;
+      --grey-300: #9fb3c8;
+      --grey-400: #829ab1;
+      --grey-500: #627d98;
+      --grey-600: #486581;
+      --grey-700: #334e68;
+      --grey-800: #243b53;
+      --grey-900: #102a43;
+      /* rest of the colors */
+      --black: #222;
+      --white: #fff;
+      --red-light: #f8d7da;
+      --red-dark: #842029;
+      --green-light: #d1e7dd;
+      --green-dark: #0f5132;
+    
+      /* fonts  */
+      --headingFont: 'Roboto Condensed', Sans-Serif;
+      --bodyFont: 'Cabin', Sans-Serif;
+      --small-text: 0.875rem;
+      --extra-small-text: 0.7em;
+      /* rest of the vars */
+      --backgroundColor: var(--grey-50);
+      --textColor: var(--grey-900);
+      --borderRadius: 0.25rem;
+      --letterSpacing: 1px;
+      --transition: 0.3s ease-in-out all;
+      --max-width: 1120px;
+      --fixed-width: 500px;
+      --fluid-width: 90vw;
+      --breakpoint-lg: 992px;
+      --nav-height: 6rem;
+      /* box shadow*/
+      --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    body{
+           background-image: var(--grey-100);
+           backdrop-filter: brightness(80%);
+            }
+            #divEle{
+                font-family: 'Black And White Picture', sans-serif;
+                margin-top: 0px;
+                margin-left: 100px;
+                /* color:azure; */
+                font-size: 60px;
+                color: #0e7c86;
+                
+       
+            }
+            #divEle2{
+                font-family: 'Black And White Picture', sans-serif;
+                color: #044e54;
+                font-size: 25px;
+                margin-left: 0%;
+                
+                
+                    }
+                    #menubar1{
+                
+                font-size: 25px;
+                margin-left:150px;
+                color: #044e54;
+                margin-top: 10px;
+                align-self: center;
+               
+                font-weight: 1000;
+                
+            }
+            #Search{
+                margin-left: 150px; 
+                 background-color: transparent;
+                 width: 150px;
+                 height: 30px;
+                 border-radius: 10px;
+                 border:2px solid #0e7c86;
+                    }
+            .flex-container{
+                   display: flex;
+                         } 
+            .flex-container > div{
+                       padding: auto;
+            }                    
+    </style>
+    </head>
+    <body>
+        <nav style="background: var(--grey-100);"> 
+            <div>
+                <label  id="divEle" for="">Food</label>
+                <label  id="divEle2" for="">Recepies</label>
+                <a href="Recepies.html" target="_blank" style="text-decoration:none; text-shadow:0 0 3px var(--green-dark);"><label  id="menubar1" for="Recepies">Recepies</label></a>
+                <a target="_blank" href="ContactPage.html"style="text-decoration:none;  text-shadow:0 0 3px var(--green-dark);"><label id="menubar1" for="about">Contact</label></a>
+                 <a href=""  target="_blank" style="text-decoration:none; text-shadow:0 0 3px var(--green-dark);"><label id="menubar1" for="contact">Log In</label></a>
+                 <label><input type="search" name="search" id="Search" placeholder="Search"><button  style="background-color:#38bec9; margin-left: 10px; width: 70px; height: 25px; border-radius: 10px; color: white">Search</button></label>
+             </div>
+         </nav>
+         <!-- Paneer Recepeis -->
+         <h2 style="color:#0e7c86; font-size: 30px; text-shadow: 0 0 10px var(--grey-400); margin-left: 50px; margin-top: 50px; text-decoration: none #54d1db;" >Paneer Recepies</h2>
+         <div class="flex-container">
+             <a href="/Paneer/Aloo_Paneer.html"><img src="/Paneer/Aloo-Paneer-Recipe-1.jpg" height="150px" width="250px" style="margin-left: 300px;margin-top: 30px; border-radius: 50px;" alt=""></a>
+             <a href="/Paneer/Broccoli.html"><img src="/Paneer/Broccoli Paneer.jpg"  style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+             <a href="/Paneer/Mix_veg.html"><img src="/Paneer/dry-mix-veg-restaurant-style.jpg"  style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+            </div>
+            <div class="flex-continer">
+                <label style="margin-left: 380px;margin-top: 30px;" for="Aloo-Paneer-Recipe">Aloo Paneer </label>
+                <label style="margin-left: 250px;margin-top: 30px;" for="Broccoli Paneer">Broccoli Paneer</label>
+                <label style="margin-left: 280px;margin-top: 30px;" for="dry-mix-veg-restaurant-style">Mix Veg</label>
+            </div>
+             <div>
+             <a href="/Paneer/KungPaoPaneer.html"><img src="/Paneer/Kung-Pao-Paneer-SK-Khazana.jpg" height="150px" width="250px" style="margin-left: 300px;margin-top: 80px; border-radius: 50px;" alt=""></a>
+             <a href="/Paneer/Lahsuni_Paneer.html"><img src="/Paneer/lehsuni-paneer-tikka-spicy-cottage-cheese-skewers-recipe-main-photo.jpg"height="150px" width="250px" style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" alt=""></a>
+             <a href="/Paneer/PaneerBarfi.html"><img src="/Paneer/Paneer Barfi.jpg" height="150px" width="250px" style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" alt=""></a></div>
+             <div>
+                <div class="flex-continer">
+                    <label style="margin-left: 380px;margin-top: 30px;" for="Kung-Pao-Paneer-SK-Khazana">Kung Pao Paneer </label>
+                    <label style="margin-left: 250px;margin-top: 30px;" for="lehsuni-paneer-tikka-spicy-cottage-cheese-skewers">Paneer tikka</label>
+                    <label style="margin-left: 280px;margin-top: 30px;" for="Paneer Barfi">Paneer Barfi</label>
+                </div>
+             <a href="/Paneer/PaneerBreadPakoda.html"><img src="/Paneer/Paneer Bread Pakora.jpg" height="150px" width="250px" style="margin-left: 400px;margin-top: 80px; border-radius: 50px;" alt=""></a>
+             <a href="/Paneer/PaneerChilli.html"><img src="/Paneer/Paneer-Chilli-Dry-Recipe-Photo.jpg" style="margin-right: 400px;margin-top: 30px; margin-left: 180px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+         </div>
+         <div class="flex-continer">
+            <label style="margin-left: 460px;margin-top: 30px;" for="Paneer Bread Pakora.">Paneer Bread Pakora</label>
+            <label style="margin-left: 340px;margin-top: 30px;" for="Paneer-Chilli-Dry-Recipe-Photo">Paneer Chilli</label>
+        </div>
+         <!-- Potatoes Recepecies -->
+         <h2 style="color:#0e7c86; font-size: 30px; margin-left: 50px; margin-top: 50px; text-decoration: none; text-shadow: 0 0 10px var(--grey-400);" >Potato Recepies</h2>
+         <div class="flex-container">
+             <a href="/Potatoes/raw_banana.html"><img src="/Potatoes/61.-Raw-Banana-Kofta-curry.jpg" height="150px" width="250px" style="margin-left: 300px;margin-top: 30px; border-radius: 50px;" alt=""></a>
+             <a href="/Potatoes/AlooCheela.html"><img src="/Potatoes/Aloo-Cheela.jpg"  style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+             <a href="/Potatoes/AlooCutlet.html"><img src="/Potatoes/Beetroot Aloo Cutlet.jpg"  style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+            </div>
+            <div class="flex-continer">
+                <label style="margin-left: 360px;margin-top: 30px;" for="Raw-Banana-Kofta-curry">Raw  Banana Kofta</label>
+                <label style="margin-left: 240px;margin-top: 30px;" for="Aloo-Cheela">Aloo Cheela</label>
+                <label style="margin-left: 250px;margin-top: 30px;" for="Beetroot Aloo Cutlet">Beetroot Aloo Cutlet</label>
+            </div>
+             <div>
+             <a href="/Potatoes/ChessyPotatoes.html"><img src="/Potatoes/Cheesy-Broccoli-Stuffed-Potatoes.jpg" height="150px" width="250px" style="margin-left: 300px;margin-top: 80px; border-radius: 50px;" alt=""></a>
+             <a href="/Potatoes/MessedPotatoes.html"><img src="/Potatoes/classic-mashed-potatoes-36787.jpg"height="150px" width="250px" style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" alt=""></a>
+             <a href="/Potatoes/Farali.html"><img src="/Potatoes/Farali Paniyaram.jpg" height="150px" width="250px" style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" alt=""> </a></div>
+             <div>
+                <div class="flex-continer">
+                    <label style="margin-left: 320px;margin-top: 30px;" for="Cheesy-Broccoli-Stuffed-Potatoes">Cheesy Broccoli Stuffed Potatoes</label>
+                    <label style="margin-left: 160px;margin-top: 30px;" for="classic-mashed-potatoes">Classic mashed potatoes</label>
+                    <label style="margin-left: 220px;margin-top: 30px;" for="Farali Paniyaram">Farali Paniyaram</label>
+                </div>
+             <a href="/Potatoes/GarlicSoup.html"><img src="/Potatoes/garlic-soup-1392x780.jpg" height="150px" width="250px" style="margin-left: 400px;margin-top: 80px; border-radius: 50px;" alt=""></a>
+             <a href="/Potatoes/RagiCuttlet.html"><img src="/Potatoes/Ragi Cutlet.jpg" style="margin-right: 400px;margin-top: 30px; margin-left: 180px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+         </div>
+         <div class="flex-continer">
+            <label style="margin-left: 460px;margin-top: 30px;" for="PotaPotatoes/garlic">Potatoes garlic soup</label>
+            <label style="margin-left: 340px;margin-top: 30px;" for="Ragi Cutlet">Ragi Cutlet</label>
+        </div>
+        <!-- Rice Recepies -->
+        <h2 style="color:#0e7c86; font-size: 30px; text-shadow: 0 0 10px var(--grey-400); margin-left: 50px; margin-top: 50px; text-decoration: underline #54d1db;" >Rice Recepies</h2>
+        <div class="flex-container">
+            <a href="/Rice/Anjeer.html"><img src="/Rice/Anjeer Kheer.jpg" height="150px" width="250px" style="margin-left: 300px;margin-top: 30px; border-radius: 50px;" alt=""></a>
+            <a href="Rice/BellamPara.html"><img src="/Rice/Bellam Paramannam.jpg"  style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+            <a href="/Rice/Bibimbap.html"><img src="/Rice/Bibimbap.jpg"  style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+           </div>
+           <div class="flex-continer">
+               <label style="margin-left: 360px;margin-top: 30px;" for="Anjeer Kheer">Anjeer Kheer</label>
+               <label style="margin-left: 270px;margin-top: 30px;" for="Bellam Paramannam">Bellam Paramannam</label>
+               <label style="margin-left: 230px;margin-top: 30px;" for="Bibimbap">Bibimbap</label>
+           </div>
+            <div>
+            <a href="/Rice/Kalkandu.html"><img src="/Rice/Kalkandu Sadam.jpg" height="150px" width="250px" style="margin-left: 300px;margin-top: 80px; border-radius: 50px;" alt=""></a>
+            <a href="/Rice/MasalaRice.html"><img src="/Rice/Masala Rice.jpg"height="150px" width="250px" style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" alt=""></a>
+            <a href="/Rice/MiniMexican.html"><img src="/Rice/Mini Mexican Platter.jpg" height="150px" width="250px" style="margin-left: 100px;margin-top: 30px; border-radius: 50px;" alt=""></a></div>
+            <div>
+               <div class="flex-continer">
+                   <label style="margin-left: 380px;margin-top: 30px;" for="Kalkandu Sadam">Kalkandu Sadam</label>
+                   <label style="margin-left: 240px;margin-top: 30px;" for="Masala Rice">Masala Rice</label>
+                   <label style="margin-left: 240px;margin-top: 30px;" for="Mini Mexican Platter">Mini Mexican Platter</label>
+               </div>
+            <a href="/Rice/Thengai.html"><img src="/Rice/Thengai Payasam.jpg" height="150px" width="250px" style="margin-left: 400px;margin-top: 80px; border-radius: 50px;" alt=""></a>
+            <a href="/Rice/VegFried.html"><img src="/Rice/veg-fried-rice-recipe.jpg" style="margin-right: 400px;margin-top: 30px; margin-left: 180px; border-radius: 50px;" height="150px" width="250px" alt=""></a>
+        </div>
+        <div class="flex-continer">
+           <label style="margin-left: 460px;margin-top: 30px;" for="Thengai Payasam.">Thengai Payasam</label>
+           <label style="margin-left: 340px;margin-top: 30px;" for="Veg veg-fried-rice-recipe">Veg Fried Rice</label>
+       </div>
+
+    </body>
+</html>
